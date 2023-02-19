@@ -1,0 +1,146 @@
+html, body{
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+  display: flex;
+  background-color: lightgray;
+
+ 
+}
+
+main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+h1{
+  padding-top: 30px;
+}
+
+#main{
+  width: 100%;
+  text-align: center;
+}
+
+#mapScroll{
+  margin-top: 30px;
+  margin: auto;
+  width: 850px;
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-image: url(images_and_maps/scrollMiddle.png);
+  background-size: cover;
+  align-items: center;
+}
+
+#mainMapCanvas{
+  width: 700px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+#fullButtonContainer{
+  align-items: center;
+  width: 100%;
+  border: solid;
+  display:flex;
+}
+
+#halfButtonContainer{
+  width: 30%;
+  border: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  
+}
+
+
+#routeStartButton, #routeCancelButton , #addMidPointButton, #deleteMidPointsButton{
+  font-size: 32px;
+  text-align: center;
+  width: 90%;
+  border-radius: 15px;
+  background-color: darkgray;
+  color:black;
+  margin-bottom: 10px;
+}
+
+#routeStartButton:hover, #routeCancelButton:hover, #addMidPointButton:hover, #deleteMidPointsButton:hover{
+  background-color: darkslategray;
+  color: white;
+}
+
+
+
+
+
+
+#navBarContainer{
+  height: 100%;
+  width: 250px;
+}
+
+#navBar{
+  margin: 10px;
+  position:relative;
+  transition: 0.5s;
+}
+
+
+#navBarScrollTop{
+  width: 250px;
+  display: block;
+  position: relative;
+  margin-bottom: -15px;
+  transition: 0.5s;
+}
+
+#navBarScrollBottom{
+  width: 250px;
+  display: block;
+  margin-top: -15px;
+  transition: 0.5s;
+}
+
+#navBarMiddle {
+  text-align: center;
+  margin-top: 10px;
+  height: 0px;
+  width: 250px;
+  transition: 0.5s;
+  z-index: 0;
+  background-image: url(images_and_maps/scrollMiddle.png);
+  background-size: 150px 300px;
+  background-position: 50px 0px;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+}
+
+#selectedPageButton {
+  padding: 10% 25% 25% 25%;
+  text-decoration: none;
+  font-size: 25px;
+  color: gray;
+  display: block;
+  transition: 0.5s;
+}
+
+#navBarButton {
+  display: block;
+  margin: 10% 25% 25% 25%;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 25px;
+  color: black;
+  transition: 0.5s;
+}
+
+
+#navBarButton:hover {
+  color: gray;
+}
+
+

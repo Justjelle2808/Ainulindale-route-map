@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+  <html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ainulindalë travel map</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+    
+    <script type="text/javascript" src="processing.js"></script>
+    <script src="scripts/routeAlgorithm.js"></script>
+    <script src="scripts/pageFunctions.js"></script>
+    <script src="scripts/algorithmController.js"></script>
+    <script src="scripts/main.js"></script>
+  
+   <main>
+      <div id=navBarContainer>
+        <div id=navBar onmouseleave="scrollClose()" onmouseover="scrollExtend()">
+          
+          <image id=navBarScrollTop src="images_and_maps/scrollOuter.png"></image>
+          
+          <div id="navBarMiddle">
+            <a id="navBarButton" href="index.html">Home</a>
+            <a id="selectedPageButton">Create route</a>
+            <a id="navBarButton" href="help_page.html">Help</a>
+          </div>
+          
+          <image id=navBarScrollBottom src="images_and_maps/scrollOuter.png"></image>
+        </div>
+      </div>
+
+        
+      <div id="main">
+        <div id=mapScroll>
+          <h1>New route</h1>
+          <canvas id=mainMapCanvas data-processing-sources="map_display_main.pde"></canvas>
+
+          <div id="fullButtonContainer">
+            <div id="halfButtonContainer">
+              <button id=routeStartButton onclick="runRouteAlgorithm(5)">Start route</button>
+              <button id=routeCancelButton onclick="cancelAlgorithm()" style="display: none;">Cancel</button>
+            </div>
+            
+            <div id="halfButtonContainer">
+              <button id=addMidPointButton onclick="addExtraPoint()">Add guide point</button>
+              <button id=deleteMidPointsButton onclick="deleteExtraPoints()">delete all guide points</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+  
+    </main>
+    
+  
+  </body>
+  
+</html>
